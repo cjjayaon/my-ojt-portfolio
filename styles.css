@@ -93,13 +93,14 @@ span {
 }
 
 .folder {
+  display: flex;
   width: 400px;
   height: 300px;
 }
 
 section {
-  display: grid;
   place-items: center;
+  display: grid;
   align-content: center;
   min-height: 100vh;
 }
@@ -118,6 +119,7 @@ section {
 }
 
 .expectations p {
+  font-weight: bold;
   text-align: center;
 }
 
@@ -125,4 +127,80 @@ section {
   font-size: 50px;
   color: #d413a4;
   margin-bottom: 20px;
+}
+
+.social-fb {
+  color: #aaa;
+  transition: 0.2s;
+  font-size: 50px;
+}
+
+.social-fb:hover {
+  color: #450fdc;
+}
+
+.social-twit {
+  color: #aaa;
+  transition: 0.2s;
+  font-size: 50px;
+}
+
+.social-twit:hover {
+  color: #3a70e4;
+}
+
+.social-yt {
+  color: #aaa;
+  transition: 0.2s;
+  font-size: 50px;
+}
+
+.social-yt:hover {
+  color: #d60d0d;
+}
+
+.social-disc {
+  color: #aaa;
+  transition: 0.2s;
+  font-size: 50px;
+}
+
+.social-disc:hover {
+  color: #7d35f1;
+}
+
+.social-logos {
+  text-decoration: none;
+}
+
+#slider {
+  overflow: hidden;
+}
+
+#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite;
+}
+
+#slider figure img {
+  float: left;
+  width: 10%;
+}
+
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  25% {
+    left: 0;
+  }
+  30% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
 }

@@ -11,18 +11,21 @@
   <body>
     <div class="hero">
       <nav>
-        <img src="images/logo.png" alt="" />
+        <img id="home" src="images/logo.png" alt="" />
         <ul>
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">ABOUT</a></li>
-          <li><a href="#">RESUME</a></li>
-          <li><a href="#">EXPECTATIONS</a></li>
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#gallery">OJT EXPERIENCE</a></li>
+          <li><a href="#socials">SOCIALS</a></li>
         </ul>
       </nav>
       <div class="detel">
-        <h1>I'm Cj <span>Jayaon</span></h1>
-        <p>StackTrek Intern <br />This is my OJT Portfolio Website</p>
-        <a href="#">EXPECTATIONS</a>
+        <h1>Hi! I'm Cj <span>Jayaon</span></h1>
+        <p>StackTrek Intern <br />This is my OJT Portfolio Website
+        <br>
+        <br>EMAIL ME:cnjayaon5818val@student.fatima.edu.ph
+        </p>
+        <a href="#gallery">EXPERIENCE</a>
       </div>
       <div class="images">
         <img src="images/shape2.png" class="shape" />
@@ -31,7 +34,7 @@
 
       <div class="expectations">
         <section class="hidden">
-          <h1>About Me</h1>
+          <h1 id="about">About Me</h1>
           <p>
             Hi! I'm a Computer Science student in Our Lady of Fatima University
             and I am currently
@@ -41,13 +44,16 @@
         </section>
 
         <section class="hidden">
-          <h1>Appreciation</h1>
-          <p>
-            I would like to thank StackTrek for accepting me into the
-            bootcamp,<br />
-            I believe that StackTrek will help me develop my skills and
-            experience as a programmer and as a person.
-          </p>
+          <h1 id="gallery">Gallery</h1>
+            <div id ="slider">
+              <figure>
+                <img src ="images/1.jpg">
+                <img src ="images/2.jpg">
+                <img src ="images/3.jpg">
+                <img src ="images/1.jpg">
+              </figure>
+              
+            </div>
         </section>
 
         <section class="hidden">
@@ -59,7 +65,32 @@
             will build along the way.
           </p>
         </section>
+
+        <section class="hidden">
+          <h1 id="socials">Socials</h1>
+          <a
+            class="social-logos"
+            href="https://www.facebook.com/MisutoKiraya/"
+            target="_blank"
+          >
+            <ion-icon name="logo-facebook" class="social-fb"></ion-icon>
+            <ion-icon name="logo-twitter" class="social-twit"></ion-icon>
+            <ion-icon name="logo-youtube" class="social-yt"></ion-icon>
+            <ion-icon name="logo-discord" class ="social-disc"></ion-icon>
+          </a>
+        </section>
       </div>
     </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+      
+    </script>
   </body>
 </html>
